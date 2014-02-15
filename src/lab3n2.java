@@ -13,38 +13,84 @@
 в которой каждое последующее число равно сумме двух предыдущих чисел. )
 * */
 import java.util.Random;
-
- public class lab3n2 {
-    public final static Object one = new Object(), two = new Object();
-
-    public static void main(String[] args){
-        final int[] number = {0};
-        final Thread th1 = new Thread(){
+public class lab3n2 {
+    public static void Thr1() {
+        final int[] number = new int[20];
+        number[0] = 0;
+        number[1] = 1;
+        new Thread(){
             public void run(){
-                Thread.yield();
-                synchronized (two){
-                    Random rnd = new Random();
-                    number[0] = rnd.nextInt(10);
-                    System.out.println("Success!" + this.getName() + " Generated number = " + number[0]);
+                synchronized (number){
+                    for(int i = 2; i < number.length; i++){
+                        number[i] = number[i-1] + number[i-2];
+                        System.out.println("Success!" + this.getName() + " Result thread 1 = " + number[i]);
+                    }
+                    System.out.println("Success!" + this.getName());
                 }
             }
-        };
-        Thread th2 = new Thread(){
+        }.start();
+        new Thread(){
             public void run(){
-                synchronized (two){
-                    Thread.yield();
-                    synchronized (one){
-                        if(number[0] % 2 == 0 || number[0] == 0){
-                        System.out.println("Success!" + this.getName() + " Result thread 1 = " + number[0]);
+                synchronized (number){
+                    for(int i = 0; i < number.length; i++){
+                            if(number[i] % 2 == 0 || number[i] == 0){
+                                System.out.println("Success!" + this.getName() + " Result thread 1 = " + number[i]);
+                            }
+                            else{
+                                number[i] = 0;
+                                System.out.println("Success!" + getName() + " Fib = " + number[i]);
+                            }
+                        }
+                    }
+                }
+        }.start();
+    }
+    public static void Thr2(){
+        final int[] number = new int[20];
+        number[0] = 0;
+        number[1] = 1;
+        new Thread(){
+            public void run(){
+                synchronized (number){
+                    for(int i = 2; i < number.length; i++){
+                        number[i] = number[i-1] + number[i-2];
+                        try {
+                            this.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println("Success!" + this.getName() + " Result thread 1 = " + number[i]);
+                    }
+                    System.out.println("Success!" + this.getName());
+                }
+            }
+        }.start();
+        new Thread(){
+            public void run(){
+                synchronized (number){
+                    for(int i = 0; i < number.length; i++){
+                        if(number[i] % 2 == 0 || number[i] == 0){
+                            System.out.println("Success!" + this.getName() + " Result thread 1 = " + number[i]);
                         }
                         else{
-                            System.out.println("Success!" + getName() + " " + th1.getName() + " without numbers");
+                            number[i] = 0;
+                            System.out.println("Success!" + getName() + " Fib = " + number[i]);
+                        }
+                        try {
+                            this.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
                         }
                     }
                 }
             }
-        };
-            th1.start();
-            th2.start();
+        }.start();
+    }
+
+    public static void main(String[] argv){
+        lab3n2 l1 = new lab3n2();
+        l1.Thr1();
+        //System.out.print("wait()");
+        //l1.Thr2();
     }
 }
