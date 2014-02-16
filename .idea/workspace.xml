@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1ccef44-afb6-4d6b-be1b-cc68a26c0e7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lab3n2.java" afterPath="$PROJECT_DIR$/src/lab3n2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lab3n2.iws" />
@@ -70,12 +70,14 @@
       <file leaf-file-name="lab3n2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="33" selection-start="3562" selection-end="3562" vertical-scroll-proportion="0.60205245" vertical-offset="0" max-vertical-offset="924">
+            <state line="72" column="32" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.8591224" vertical-offset="0" max-vertical-offset="768">
               <folding>
-                <element signature="e#0#4478#0" expanded="true" />
+                <element signature="docComment;class#lab3n2#0" expanded="false" />
                 <element signature="method#Thr1#0;class#lab3n2#0" expanded="false" />
-                <element signature="e#3168#4298#0" expanded="true" />
-                <element signature="e#4287#4288#0" expanded="true" />
+                <element signature="e#2494#3127#0" expanded="true" />
+                <element signature="e#3116#3117#0" expanded="true" />
+                <element signature="e#3150#4147#0" expanded="true" />
+                <element signature="e#4136#4137#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,9 +101,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="624" />
-    <option name="width" value="1296" />
-    <option name="height" value="1050" />
+    <option name="y" value="16" />
+    <option name="width" value="1364" />
+    <option name="height" value="734" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -141,6 +143,9 @@
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Application.lab3n2">
     <configuration default="false" name="lab3n2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -155,7 +160,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="lab3n2" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -193,6 +204,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -218,19 +242,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -327,31 +338,35 @@
       <created>1392476427091</created>
       <updated>1392476427091</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Hell Yeah!!!1111">
+      <created>1392580093034</created>
+      <updated>1392580093034</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="624" y="0" width="1296" height="1050" extended-state="0" />
+    <frame x="0" y="16" width="1364" height="734" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32751092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5153846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3311185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33042213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -360,7 +375,7 @@
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
+    <option name="RECENTLY_FILTERED_USERS">
       <collection />
     </option>
   </component>
@@ -372,7 +387,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Some thread exp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some thread exp" />
+    <MESSAGE value="Hell Yeah!!!1111" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hell Yeah!!!1111" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -384,20 +400,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1200">
+        <state line="76" column="33" selection-start="3562" selection-end="3562" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="924">
           <folding>
-            <element signature="e#0#4478#0" expanded="true" />
+            <element signature="docComment;class#lab3n2#0" expanded="false" />
             <element signature="method#Thr1#0;class#lab3n2#0" expanded="false" />
-            <element signature="e#3168#4298#0" expanded="true" />
-            <element signature="e#4287#4288#0" expanded="true" />
+            <element signature="e#2494#3127#0" expanded="true" />
+            <element signature="e#3116#3117#0" expanded="true" />
+            <element signature="e#3150#4147#0" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/lang/Object.java">
+    <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="502" column="0" selection-start="23174" selection-end="23174" vertical-scroll-proportion="0.0" vertical-offset="6024" max-vertical-offset="6720">
-          <folding />
+        <state line="69" column="0" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1200">
+          <folding>
+            <element signature="docComment;class#lab3n2#0" expanded="false" />
+            <element signature="method#Thr1#0;class#lab3n2#0" expanded="false" />
+            <element signature="e#2494#3127#0" expanded="true" />
+            <element signature="e#3116#3117#0" expanded="true" />
+            <element signature="e#3150#4147#0" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -405,10 +430,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="48" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1212">
           <folding>
-            <element signature="e#0#4478#0" expanded="true" />
+            <element signature="docComment;class#lab3n2#0" expanded="false" />
             <element signature="method#Thr1#0;class#lab3n2#0" expanded="false" />
-            <element signature="e#3168#4298#0" expanded="true" />
-            <element signature="e#4287#4288#0" expanded="true" />
+            <element signature="e#2494#3127#0" expanded="true" />
+            <element signature="e#3116#3117#0" expanded="true" />
+            <element signature="e#3150#4147#0" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -417,33 +444,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="35" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="672">
           <folding>
-            <element signature="e#0#4478#0" expanded="true" />
+            <element signature="docComment;class#lab3n2#0" expanded="false" />
             <element signature="method#Thr1#0;class#lab3n2#0" expanded="false" />
-            <element signature="e#3168#4298#0" expanded="true" />
-            <element signature="e#4287#4288#0" expanded="true" />
+            <element signature="e#2494#3127#0" expanded="true" />
+            <element signature="e#3116#3117#0" expanded="true" />
+            <element signature="e#3150#4147#0" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="502" column="0" selection-start="23174" selection-end="23174" vertical-scroll-proportion="0.20819113" vertical-offset="5565" max-vertical-offset="6444">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="33" selection-start="3562" selection-end="3562" vertical-scroll-proportion="0.60205245" vertical-offset="0" max-vertical-offset="924">
+        <state line="72" column="32" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.8591224" vertical-offset="0" max-vertical-offset="768">
           <folding>
-            <element signature="e#0#4478#0" expanded="true" />
+            <element signature="docComment;class#lab3n2#0" expanded="false" />
             <element signature="method#Thr1#0;class#lab3n2#0" expanded="false" />
-            <element signature="e#3168#4298#0" expanded="true" />
-            <element signature="e#4287#4288#0" expanded="true" />
+            <element signature="e#2494#3127#0" expanded="true" />
+            <element signature="e#3116#3117#0" expanded="true" />
+            <element signature="e#3150#4147#0" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>lab3n2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
