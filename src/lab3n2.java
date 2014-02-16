@@ -47,19 +47,21 @@ public class lab3n2 {
     }
     public static void Thr2(){
         final int[] number = new int[20];
+        final Object monitor = new Object();
         number[0] = 0;
         number[1] = 1;
         new Thread(){
             public void run(){
-                synchronized (number){
+                synchronized (monitor){
                     for(int i = 2; i < number.length; i++){
                         number[i] = number[i-1] + number[i-2];
+                        System.out.println("Success!" + this.getName() + " Result = " + number[i]);
                         try {
-                            this.wait();
+                            monitor.wait();
+                            monitor.notifyAll();
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-                        System.out.println("Success!" + this.getName() + " Result thread 1 = " + number[i]);
                     }
                     System.out.println("Success!" + this.getName());
                 }
@@ -67,19 +69,25 @@ public class lab3n2 {
         }.start();
         new Thread(){
             public void run(){
-                synchronized (number){
-                    for(int i = 0; i < number.length; i++){
-                        if(number[i] % 2 == 0 || number[i] == 0){
-                            System.out.println("Success!" + this.getName() + " Result thread 1 = " + number[i]);
-                        }
-                        else{
-                            number[i] = 0;
-                            System.out.println("Success!" + getName() + " Fib = " + number[i]);
-                        }
-                        try {
-                            this.wait();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
+                synchronized (monitor){
+                    for(int i = 0; i < number.length; i++) {
+                        int aNumber = number[i];
+                        if (aNumber % 2 == 0 || aNumber == 0) {
+                            System.out.println("Success!" + this.getName() + " Result = " + aNumber);
+                            try {
+                                monitor.wait();
+                                monitor.notify();
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        } else {
+                            System.out.println("Success!" + getName() + " Fib = " + 0);
+                            try {
+                                monitor.wait();
+                                monitor.notifyAll();
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 }
@@ -89,8 +97,8 @@ public class lab3n2 {
 
     public static void main(String[] argv){
         lab3n2 l1 = new lab3n2();
-        l1.Thr1();
+        //l1.Thr1();
         //System.out.print("wait()");
-        //l1.Thr2();
+        l1.Thr2();
     }
 }
