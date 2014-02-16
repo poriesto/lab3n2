@@ -1,7 +1,5 @@
 /**
  * Created by Александр on 15.02.14.
- */
-/*
 * 3. Создать 2 потока, один из которых генерирует случайным образом число Фибоначчи в разделенную между потоками переменную ,
 а другой считывает это число , определяет четное ли оно , и выводит на печать каждое четное число.
 Цикл для каждого потока выполняется число раз заданное параметром.
@@ -12,17 +10,20 @@
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, …
 в которой каждое последующее число равно сумме двух предыдущих чисел. )
 * */
-import java.util.Random;
+
 public class lab3n2 {
+    static double golden = (1 + Math.sqrt(5))/2;
+
+    private static Object monitor = new Object();
     public static void Thr1() {
-        final int[] number = new int[20];
+        final double[] number = new double[20];
         number[0] = 0;
         number[1] = 1;
         new Thread(){
             public void run(){
                 synchronized (number){
-                    for(int i = 2; i < number.length; i++){
-                        number[i] = number[i-1] + number[i-2];
+                    for(int i = 0; i < number.length; i++){
+                        number[i] = ((Math.pow(golden, i)) - (Math.pow(-golden, -i)))/(2*golden -1);
                         System.out.println("Success!" + this.getName() + " Result thread 1 = " + number[i]);
                     }
                     System.out.println("Success!" + this.getName());
@@ -46,59 +47,54 @@ public class lab3n2 {
         }.start();
     }
     public static void Thr2(){
-        final int[] number = new int[20];
-        final Object monitor = new Object();
-        number[0] = 0;
-        number[1] = 1;
-        new Thread(){
+        final double[] number = new double[15];
+        Thread th1 = new Thread(){
             public void run(){
                 synchronized (monitor){
-                    for(int i = 2; i < number.length; i++){
-                        number[i] = number[i-1] + number[i-2];
-                        System.out.println("Success!" + this.getName() + " Result = " + number[i]);
+                    for(int i = 0; i < number.length; i++){
+                        number[i] = ((Math.pow(golden, i)) - (Math.pow(-golden, -i)))/(2*golden -1);
+                        System.out.println(this.getName() + " number[" + i + "] = " + number[i]);
                         try {
                             monitor.wait();
-                            monitor.notifyAll();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
+                            monitor.notify();
                         }
+                        catch (InterruptedException e) { e.printStackTrace(); }
                     }
-                    System.out.println("Success!" + this.getName());
                 }
             }
-        }.start();
-        new Thread(){
+        };
+        Thread th2 = new Thread(){
             public void run(){
+                int i = 0;
                 synchronized (monitor){
-                    for(int i = 0; i < number.length; i++) {
-                        int aNumber = number[i];
-                        if (aNumber % 2 == 0 || aNumber == 0) {
-                            System.out.println("Success!" + this.getName() + " Result = " + aNumber);
-                            try {
-                                monitor.wait();
-                                monitor.notify();
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
-                        } else {
-                            System.out.println("Success!" + getName() + " Fib = " + 0);
-                            try {
-                                monitor.wait();
-                                monitor.notifyAll();
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
+                    while(i != number.length){
+                        if(number[i] % 2 == 0 || number[i] == 0){
+                            System.out.println(this.getName() + " number[" + i + "] = " + number[i]);
+                            i++;
+                            monitor.notify();
+                            try { monitor.wait(); }
+                            catch (InterruptedException e) { e.printStackTrace(); }
+                        }
+                        else {
+                            System.out.println(this.getName() + " number[" + i + "] = " + 0);
+                            i++;
+                            monitor.notify();
+                            try { monitor.wait(); }
+                            catch (InterruptedException e) { e.printStackTrace(); }
                         }
                     }
                 }
             }
-        }.start();
+        };
+        th1.start();
+        th2.start();
     }
 
     public static void main(String[] argv){
         lab3n2 l1 = new lab3n2();
-        //l1.Thr1();
-        //System.out.print("wait()");
+        /*System.out.println("Второй поток ждет, когда первый поток завершит всю свою работу с данными.\n");
+        l1.Thr1();*/
+        System.out.print("Потоки работают попеременно.\n");
         l1.Thr2();
     }
 }
