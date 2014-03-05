@@ -73,7 +73,7 @@ public class lab3n2 {
                 synchronized (monitor){
                     while(i != number.length){
                         if(number[i] % 2 == 0 || number[i] == 0){
-                            System.out.println(this.getName() + " number[" + i + "] = " + number[i]);
+                            System.out.println(this.getName() + " Четное число пришло number[" + i + "] = " + number[i]);
                             i++;
                             monitor.notify();
                             try {
@@ -84,7 +84,7 @@ public class lab3n2 {
                             }
                         }
                         else {
-                            System.out.println(this.getName() + " number[" + i + "] = " + 0);
+                            System.out.println(this.getName() + " Нечетное число пришло number[" + i + "] = " + 0);
                             i++;
                             monitor.notify();
                             try {
