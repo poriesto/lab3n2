@@ -47,18 +47,22 @@ public class lab3n2 {
         }.start();
     }
     public static void Thr2(){
-        final double[] number = new double[15];
+        final int[] number = new int[15];
         Thread th1 = new Thread(){
             public void run(){
                 synchronized (monitor){
+                    double tmp;
                     for(int i = 0; i < number.length; i++){
-                        number[i] = ((Math.pow(golden, i)) - (Math.pow(-golden, -i)))/(2*golden -1);
+                        tmp = ((Math.pow(golden, i)) - (Math.pow(-golden, -i)))/(2*golden -1);
+                        number[i] = (int)tmp;
                         System.out.println(this.getName() + " number[" + i + "] = " + number[i]);
                         try {
                             monitor.wait();
                             monitor.notify();
                         }
-                        catch (InterruptedException e) { e.printStackTrace(); }
+                        catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
             }
@@ -72,15 +76,23 @@ public class lab3n2 {
                             System.out.println(this.getName() + " number[" + i + "] = " + number[i]);
                             i++;
                             monitor.notify();
-                            try { monitor.wait(); }
-                            catch (InterruptedException e) { e.printStackTrace(); }
+                            try {
+                                monitor.wait();
+                            }
+                            catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                         }
                         else {
                             System.out.println(this.getName() + " number[" + i + "] = " + 0);
                             i++;
                             monitor.notify();
-                            try { monitor.wait(); }
-                            catch (InterruptedException e) { e.printStackTrace(); }
+                            try {
+                                monitor.wait();
+                            }
+                            catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 }
