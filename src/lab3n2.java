@@ -31,10 +31,11 @@ class Work{
             //@Override
             public void run(){
                 synchronized (monitor){
-                    for(int i = 0; i < Fibanachi.length; i++){
-                        check = Fibanachi[rnd.nextInt(Fibanachi.length)];
-                        System.out.println(this.getName() + " Fibanachi[" + i + "] = " + check);
-                        try {
+                    for(int aFibanachi : Fibanachi){
+                        aFibanachi = Fibanachi[rnd.nextInt(Fibanachi.length)];
+                        System.out.println(this.getName() + " Current Fibanachi = " + aFibanachi);
+                        check = aFibanachi;
+                        try{
                             monitor.wait();
                             monitor.notify();
                         }
@@ -67,11 +68,20 @@ class Work{
         thread1.start();
         thread2.start();
     }
+
+    public void getFib(){
+        String str = "Полная последовательность чисел Фибаначи до " + Fibanachi.length + " элемента \n";
+        for(int aFibanachi : Fibanachi){
+            str += aFibanachi + " ";
+        }
+        System.out.println(str + "\n");
+    }
 }
 public class lab3n2 {
     public static void main(String[] argv){
         System.out.print("Потоки работают попеременно.\n");
         Work wrk = new Work(30);
+        wrk.getFib();
         wrk.SomeWork();
     }
 }
