@@ -27,47 +27,7 @@ class Work{
         }
     }
     public void SomeWork(){
-        Thread thread1 = new Thread(){
-            //@Override
-            public void run(){
-                synchronized (monitor){
-                    for(int aFibanachi : Fibanachi){
-                        aFibanachi = Fibanachi[rnd.nextInt(Fibanachi.length)];
-                        System.out.println(this.getName() + " Current Fibanachi = " + aFibanachi);
-                        check = aFibanachi;
-                        try{
-                            monitor.wait();
-                            monitor.notify();
-                        }
-                        catch (InterruptedException e){
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            }
-        };
-        Thread thread2 = new Thread(){
-            public void run(){
-                synchronized (monitor){
-                    for (int aFibanachi : Fibanachi) {
-                        if (check % 2 == 0) {
-                            System.out.println(this.getName() + " Четное число пришло Fibanachi = " + check);
-                        } else {
-                            System.out.println(this.getName() + " Нечетное число пришло = " + 0);
-                        }
-                        monitor.notify();
-                        try {
-                            monitor.wait();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            }
-        };
-        thread1.start();
-        thread2.start();
-    }
+   }
 
     public void getFib(){
         String str = "Полная последовательность чисел Фибаначи до " + Fibanachi.length + " элемента \n";

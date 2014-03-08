@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1ccef44-afb6-4d6b-be1b-cc68a26c0e7c" name="Default" comment="&#10;Hell">
+    <list default="true" id="a1ccef44-afb6-4d6b-be1b-cc68a26c0e7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lab3n2.java" afterPath="$PROJECT_DIR$/src/lab3n2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -70,7 +70,7 @@
       <file leaf-file-name="lab3n2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="5" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.4892916" vertical-offset="0" max-vertical-offset="957">
+            <state line="29" column="0" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.5255354" vertical-offset="0" max-vertical-offset="607">
               <folding />
             </state>
           </provider>
@@ -87,7 +87,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="some_shit" />
       </map>
     </option>
   </component>
@@ -390,7 +390,11 @@
       <created>1394046329739</created>
       <updated>1394046329739</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&#10;HellSome shit">
+      <created>1394312667161</created>
+      <updated>1394312667161</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,7 +442,8 @@
     <MESSAGE value="Some thread exp" />
     <MESSAGE value="Hell Yeah!!!1111" />
     <MESSAGE value="&#10;Hell" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Hell" />
+    <MESSAGE value="&#10;HellSome shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;HellSome shit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -800,7 +805,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.4892916" vertical-offset="0" max-vertical-offset="957">
+        <state line="29" column="0" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.5255354" vertical-offset="0" max-vertical-offset="607">
           <folding />
         </state>
       </provider>
