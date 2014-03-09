@@ -70,8 +70,10 @@
       <file leaf-file-name="lab3n2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.5255354" vertical-offset="0" max-vertical-offset="607">
-              <folding />
+            <state line="63" column="32" selection-start="3081" selection-end="3127" vertical-scroll-proportion="1.1556982" vertical-offset="0" max-vertical-offset="1128">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,7 +89,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="some_shit" />
+        <entry key="$PROJECT_DIR$" value="true1" />
       </map>
     </option>
   </component>
@@ -130,6 +132,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -168,8 +172,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,6 +250,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -273,19 +288,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -399,32 +401,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="24" width="1354" height="718" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3975535" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270142" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32511556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run emulator out" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22450532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39753467" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819724" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15829529" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32115677" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run emulator out" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39753467" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -456,357 +458,455 @@
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="996">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="1079">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="1162">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="1162">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="1162">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="1162">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="1162">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="1162">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="1162">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1092" max-vertical-offset="1162">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="1494">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1245">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1245">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="50" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1245">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="20" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="1245">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="20" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="1245">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="20" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="1245">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="20" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="1245">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="1001">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="1001">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="924">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="30" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="924">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="30" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="924">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="30" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1386">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="30" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="876">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="51" selection-start="2791" selection-end="2791" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="852">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="99" selection-start="2675" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="900">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="99" selection-start="2675" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="900">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="99" selection-start="2675" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="900">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="99" selection-start="2675" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="900">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="99" selection-start="2675" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="900">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="99" selection-start="2675" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="900">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="45" selection-start="3307" selection-end="3307" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="720">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="720">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="20" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="720">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="20" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="720">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="20" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="720">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="20" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="720">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="20" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="768">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="20" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="768">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="20" selection-start="4190" selection-end="4196" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="768">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="20" selection-start="4190" selection-end="4196" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="768">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="32" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="768">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="32" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="704">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="32" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="960">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="33" selection-start="3562" selection-end="3562" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="924">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="0" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1200">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="48" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1212">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="35" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="672">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab3n2.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab3n2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.5255354" vertical-offset="0" max-vertical-offset="607">
-          <folding />
+        <state line="63" column="32" selection-start="3081" selection-end="3127" vertical-scroll-proportion="1.1556982" vertical-offset="0" max-vertical-offset="1128">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
