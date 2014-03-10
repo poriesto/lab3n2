@@ -22,7 +22,6 @@ import java.util.concurrent.*;
         private Integer i;
         public FibNum(Integer i){this.i = i;}
         public Integer call(){
-            System.out.println(this.getClass().getName() + " " + i);
             Double golden = (1 + Math.sqrt(5)) /2;
             Double tmp = (((Math.pow(golden, i)) - (Math.pow(-golden, -i)))/(2*golden -1));
             return tmp.intValue();
