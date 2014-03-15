@@ -30,7 +30,6 @@ import java.util.concurrent.*;
 
     Work(int lenght) {
         Fibanachi = new Future[lenght];
-        double golden = (1 + Math.sqrt(5)) / 2;
         ExecutorService pool = Executors.newFixedThreadPool(4);
         for(int i = 0; i < Fibanachi.length; i++) Fibanachi[i] = pool.submit(new FibNum(i));
         pool.shutdown();
@@ -42,7 +41,7 @@ import java.util.concurrent.*;
                         for(Future<Integer>aFib : Fibanachi){
                             try {
                                 check = Fibanachi[rnd.nextInt(Fibanachi.length)].get();
-                                System.out.print("Thread1=>");
+                                System.out.print(this.getName() + " random = " + check);
                                 monitor.wait();
                                 monitor.notify();
                             } catch (InterruptedException e) {
@@ -58,13 +57,11 @@ import java.util.concurrent.*;
                 public void run(){
                     for(Future<Integer>aFib : Fibanachi){
                         synchronized (monitor){
-                            try {
-                                System.out.println("Thread2 = " + check + " ,Current not randomed elements = " + aFib.get());
+                            try{
+                                System.out.println(" =>  " + this.getName() + " = " + check);
                                 monitor.notify();
                                 monitor.wait();
                             } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            } catch (ExecutionException e) {
                                 e.printStackTrace();
                             }
                         }
