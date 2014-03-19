@@ -1,5 +1,7 @@
 import java.util.Random;
+import java.util.Vector;
 import java.util.concurrent.*;
+import java.util.function.Predicate;
 
 /**
  * Created by Александр on 15.02.14.
@@ -14,9 +16,9 @@ import java.util.concurrent.*;
 в которой каждое последующее число равно сумме двух предыдущих чисел. )
 * */
  class Work{
-    final private Future<Integer>[] Fibanachi;
+    final private Vector<Future<Integer>> Fibanachi = new Vector<>();
     final private Random rnd = new Random();
-    private Integer check = 0;
+    private Integer current = 0;
     final private Object monitor = new Object();
     private final class FibNum implements Callable<Integer>{
         private Integer i;
@@ -24,16 +26,14 @@ import java.util.concurrent.*;
         public Integer call(){
             Double golden = (1 + Math.sqrt(5)) /2;
             Double tmp = (((Math.pow(golden, i)) - (Math.pow(-golden, -i)))/(2*golden -1));
-            System.out.println(this.getClass().getName() + " id = " + i + " Current = " + tmp.intValue());
             return tmp.intValue();
         }
     }
 
     Work(int lenght) {
-        Fibanachi = new Future[lenght];
         ExecutorService pool = Executors.newFixedThreadPool(4);
-        for(int i = 0; i < Fibanachi.length; i++){
-            Fibanachi[i] = pool.submit(new FibNum(i));
+        for(int i = 0; i < lenght; i++){
+            Fibanachi.add(pool.submit(new FibNum(i)));
         }
         pool.shutdown();
     }
@@ -43,8 +43,8 @@ import java.util.concurrent.*;
                     synchronized (monitor){
                         for(Future<Integer>aFib : Fibanachi){
                             try {
-                                check = Fibanachi[rnd.nextInt(Fibanachi.length)].get();
-                                System.out.print(this.getName() + " random = " + check);
+                                current = Fibanachi.elementAt(rnd.nextInt(Fibanachi.size() - 1)).get();
+                                System.out.print(this.getName() + " random = " + current);
                                 monitor.wait();
                                 monitor.notify();
                             } catch (InterruptedException e) {
@@ -61,7 +61,7 @@ import java.util.concurrent.*;
                     for(Future<Integer>aFib : Fibanachi){
                         synchronized (monitor){
                             try{
-                                System.out.println(" =>  " + this.getName() + " = " + check);
+                                System.out.println(" =>  " + this.getName() + " = " + check(current, n -> n%2 == 0 ));
                                 monitor.notify();
                                 monitor.wait();
                             } catch (InterruptedException e) {
@@ -72,9 +72,17 @@ import java.util.concurrent.*;
                 }
             }.start();
    }
+    private Integer check(Integer value, Predicate<Integer>p){
+        if(p.test(value)){
+            return value;
+        }
+        else {
+            return 0;
+        }
+    }
 
     public void getFib() throws ExecutionException, InterruptedException {
-        String str = "Полная последовательность чисел Фибаначи до " + Fibanachi.length + " элемента \n";
+        String str = "Полная последовательность чисел Фибаначи до " + Fibanachi.size() + " элемента \n";
         for(Future<Integer> aFibanachi : Fibanachi){
             str += aFibanachi.get() + " ";
 
@@ -85,7 +93,7 @@ import java.util.concurrent.*;
 public class lab3n2 {
     public static void main(String[] argv) throws ExecutionException, InterruptedException {
         System.out.print("Потоки работают попеременно.\n");
-        Work wrk = new Work(45);
+        Work wrk = new Work(100);
         wrk.getFib();
         wrk.SomeWork();
     }
