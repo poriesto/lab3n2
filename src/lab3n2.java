@@ -24,6 +24,7 @@ import java.util.concurrent.*;
         public Integer call(){
             Double golden = (1 + Math.sqrt(5)) /2;
             Double tmp = (((Math.pow(golden, i)) - (Math.pow(-golden, -i)))/(2*golden -1));
+            System.out.println(this.getClass().getName() + " id = " + i + " Current = " + tmp.intValue());
             return tmp.intValue();
         }
     }
@@ -31,7 +32,9 @@ import java.util.concurrent.*;
     Work(int lenght) {
         Fibanachi = new Future[lenght];
         ExecutorService pool = Executors.newFixedThreadPool(4);
-        for(int i = 0; i < Fibanachi.length; i++) Fibanachi[i] = pool.submit(new FibNum(i));
+        for(int i = 0; i < Fibanachi.length; i++){
+            Fibanachi[i] = pool.submit(new FibNum(i));
+        }
         pool.shutdown();
     }
     public void SomeWork(){
